@@ -1,0 +1,234 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+/* CABECALHO */
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    align-items: center;
+    width: 100vw;
+    z-index: 5;
+}
+
+header.rolagem{
+    background-color: #fdfef4e7;
+    transition: 500ms ease-in-out;
+}
+
+.cabecalho_img{
+    height: 50px;
+    padding: 10px;
+    padding-left: 80px;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.cabecalho_menu a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Pixar', sans-serif;
+    color: #341002;
+}
+
+.cabecalho_menu a:hover{
+    color: #341002;
+    transition: ease-in-out 300ms;
+}
+
+.curriculo{
+    background-color: #341002;
+    color: white;
+    padding: 10px 30px;
+    margin-right: 80px;
+    border-radius: 20px;
+    font-family: 'pixar';
+    transition: ease-in-out 200ms;
+}
+
+.curriculo:hover{
+    transform: scale(0.98);
+    box-shadow: 0px 0px 2px #fcfcfc;
+}
+
+/* HOME */
+
+.home{
+    background: linear-gradient(-200deg, #361204af 0%, #fdfef4 56%) no-repeat;
+    background-color: #fdfef4;
+    height: 100vh;
+    width: 100vw;
+}
+
+.caixa_home{
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_img{
+    margin-bottom: 1.5rem;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #341002;
+    transform: translateY(0px);
+    animation: float ease-in-out 4s infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.nome{
+    font-size: 50px;
+    font-family: 'Pixar', sans-serif;
+}
+
+.texto_home{
+    font-size: 20px;
+    font-family: 'Pixar', sans-serif;
+    border-right: 4px solid;
+    width: 23.3ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2500ms steps(23), blinking 500ms infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0ch;
+    }
+}
+
+@keyframes blinking {
+    50%{
+        border-color: white;
+    }
+}
+
+/* ABOUT */
+
+.about{
+    border-top: 2px solid #3410022b;
+    background-color: #fdfef4;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    height: 115vh;
+    width: 100vw;
+}
+
+.pixar{
+    height: 80px;
+    z-index: -5;
+}
+
+.about_infos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about_img{
+    height: 500px;
+    padding-right: 80px;
+}
+
+.about_titulo{
+    color: black;
+    text-align: center;
+    font-family: 'Pixar', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 120px;
+}
+
+.about_texto{
+    color: black;
+    font-size: 20px;
+    font-family: 'Pixar', sans-serif;
+    max-width: 850px;
+    padding-right: 40px;
+}
+
+/* CURSOS */
+
+.caixa_maior_curso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.video_cursos{
+    position: absolute;
+    background-attachment: fixed;
+    opacity: 0.7;
+    width: 100vw;
+    z-index: -100;
+}
+
+.img_avatar{
+    height: 350px;
+    padding-right: 50px;
+    padding-top: 100px;
+    transform: translateY(0px);
+    animation: float ease-in-out 4s infinite;
+}
+
+.caixa_dev{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.titulo_curso{
+    color: white;
+    font-size: 60px;
+    font-family: 'Pixar';
+}
+
+.texto_curso{
+    line-height: 1.7rem;
+    max-width: 800px;
+    color: white;
+    font-family: 'Pixar';
+    font-size: 20px;
+    padding-left: 50px;
+}
